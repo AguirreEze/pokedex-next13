@@ -2,16 +2,22 @@
 
 import { useRouter, useSearchParams } from "next/navigation"
 import { SyntheticEvent, useState } from "react"
+import isNumber from "utils/isNumber"
 
 export default function Navbar() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const page = searchParams.get("page") || "1"
 
-  router.prefetch(`/?page=${parseInt(page) + 1}`)
-  page !== "1" && router.prefetch(`/?page=${parseInt(page) - 1}`)
-
   const [display, setDisplay] = useState(page)
+
+  if (!isNumber(page) || parseInt(page) < 1) {
+    router.replace("/?page=1")
+    setDisplay("1")
+  }
+
+  // router.prefetch(`/?page=${parseInt(page) + 1}`)
+  // page !== "1" && router.prefetch(`/?page=${parseInt(page) - 1}`)
 
   const handleSubmit = (e: SyntheticEvent) => {
     e.preventDefault()
