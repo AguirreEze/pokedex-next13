@@ -1,4 +1,4 @@
-export interface PokemonResultType {
+export type PokemonResultType = {
   name: string
   url: string
 }
@@ -10,7 +10,7 @@ export interface ApiResponseType {
   results: PokemonResultType[]
 }
 
-export interface SearchType {
+export type SearchType = {
   page: string
   pokemonPerPage: string
 }
@@ -23,7 +23,7 @@ export type PokemonStats =
   | "special-defence"
   | "speed"
 
-export interface PokemonData {
+export type PokemonData = {
   name: string
   height: number
   weight: number
@@ -66,7 +66,7 @@ export interface PokemonData {
   }[]
 }
 
-export interface PokemonDataRaw {
+export type PokemonDataRaw = {
   name: string
   id: number
   height: number
