@@ -8,15 +8,18 @@ export default function Navigation() {
   const searchParams = useSearchParams()
   const page = searchParams.get("page") || "1"
 
+  router.prefetch(`/?page=${parseInt(page) + 1}`)
+  page !== "1" && router.prefetch(`/?page=${parseInt(page) - 1}`)
+
   const [display, setDisplay] = useState(page)
 
   const handleSubmit = (e: SyntheticEvent) => {
     e.preventDefault()
-    router.push(`/?page=${display}`)
+    router.replace(`/?page=${display}`)
   }
 
   const handleClick = (page: string) => {
-    router.push(`/?page=${page}`)
+    router.replace(`/?page=${page}`)
     setDisplay(page)
   }
 
