@@ -1,0 +1,34 @@
+.ta--center {
+  text-align: center;
+}
+.d--flex {
+  display: flex;
+}
+.fd--row {
+  flex-direction: row;
+}
+.fd--col {
+  flex-direction: column;
+}
+.flex--1 {
+  flex: 1;
+}
+.as--f-end {
+  align-self: flex-end;
+}
+.js--f-end {
+  justify-self: flex-end;
+}
+.border--1 {
+  border: 1px solid var(--text);
+}
+.jc--space-between {
+  justify-content: space-between;
+}
+.br--bot {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.h--full {
+  height: 100%;
+}

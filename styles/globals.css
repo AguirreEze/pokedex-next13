@@ -1,9 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;600&display=swap");
+
+:root {
+  --background: #000;
+  --text: #0f0;
+  --disabled: #aaa;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+}
+
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+body {
+  color: var(--text);
+  background: var(--background);
 }
 
 a {
@@ -14,13 +34,44 @@ a {
 * {
   box-sizing: border-box;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  margin: 0;
+}
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+button {
+  background-color: var(--background);
+  color: var(--text);
+  border: 1px solid var(--text);
+}
+button:disabled {
+  color: var(--disabled);
+  border: 1px solid var(--disabled);
+}
+input {
+  background-color: var(--background);
+  color: var(--text);
+  border: 1px solid var(--text);
+}
+footer {
+  height: 3.5rem;
+}
+
+@media (min-width: 500px) {
   body {
-    color: white;
-    background: black;
+    width: 390px;
+    height: 844px;
+    border: 1px solid var(--text);
+    overflow: hidden;
   }
 }
