@@ -40,9 +40,9 @@ export default async function handler(
       method: "GET",
     }
     try {
-      const data = await fetch(baseURL + "?" + urlParams, headers).then((res) =>
-        res.json()
-      )
+      const data = await fetch(baseURL + "?" + urlParams, headers)
+        .then((res) => res.json())
+        .then((res) => res.results)
       return res.status(200).json(data)
     } catch {
       return res.status(400).json({ error: "Wrong Data" })
