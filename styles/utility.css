@@ -13,6 +13,9 @@
 .flex--1 {
   flex: 1;
 }
+.ai--center {
+  align-items: center;
+}
 .as--f-end {
   align-self: flex-end;
 }
@@ -25,10 +28,21 @@
 .jc--space-between {
   justify-content: space-between;
 }
-.br--bot {
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+.br--xs {
+  border-radius: 0.2rem;
+}
+
+.f--center {
+  align-items: center;
+  justify-content: center;
 }
 .h--full {
   height: 100%;
+}
+.m--y-s {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.gap--s {
+  gap: 0.6rem;
 }

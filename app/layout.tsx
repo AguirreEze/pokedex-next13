@@ -10,7 +10,7 @@ export default function RootLayout({
   return (
     <html>
       <head />
-      <body className="d--flex fd--col jc--space-between">
+      <body>
         {children}
         <Navbar />
       </body>

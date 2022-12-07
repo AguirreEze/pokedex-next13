@@ -14,13 +14,6 @@ body {
   font-weight: 300;
 }
 
-html {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
-
 body {
   color: var(--text);
   background: var(--background);
@@ -64,14 +57,14 @@ input {
   border: 1px solid var(--text);
 }
 footer {
+  position: sticky;
+  bottom: 0;
   height: 3.5rem;
 }
 
 @media (min-width: 500px) {
   body {
     width: 390px;
-    height: 844px;
     border: 1px solid var(--text);
-    overflow: hidden;
   }
 }
