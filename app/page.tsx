@@ -22,7 +22,7 @@ export default async function Home({ searchParams }: Iprops) {
 
   return (
     <main>
-      <h1 className="ta--center m--y-s">Pokedex</h1>
+      <h1 className="ta--center p--y-s">Pokedex</h1>
       <ul className="d--flex fd--col ai--center gap--s">
         {pokemons.map(({ name }: PokemonResultType) => {
           return <NavigationItem key={name} url={`/${name}`} label={name} />

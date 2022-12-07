@@ -39,9 +39,9 @@
 .h--full {
   height: 100%;
 }
-.m--y-s {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+.p--y-s {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .gap--s {
   gap: 0.6rem;
