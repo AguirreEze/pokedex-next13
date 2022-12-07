@@ -15,10 +15,15 @@ export default function Navigation() {
     router.push(`/?page=${display}`)
   }
 
+  const handleClick = (page: string) => {
+    router.push(`/?page=${page}`)
+    setDisplay(page)
+  }
+
   return (
     <footer className="d--flex fd--row">
       <button
-        onClick={() => router.push(`/?page=${parseInt(page) - 1}`)}
+        onClick={() => handleClick(`${parseInt(page) - 1}`)}
         disabled={page === "1"}
         className="flex--1"
       >
@@ -35,7 +40,7 @@ export default function Navigation() {
         />
       </form>
       <button
-        onClick={() => router.push(`/?page=${parseInt(page) + 1}`)}
+        onClick={() => handleClick(`${parseInt(page) + 1}`)}
         className="flex--1"
       >
         {">"}
