@@ -3,7 +3,7 @@
 import { useRouter, useSearchParams } from "next/navigation"
 import { SyntheticEvent, useState } from "react"
 
-export default function Navigation() {
+export default function Navbar() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const page = searchParams.get("page") || "1"
