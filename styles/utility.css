@@ -22,6 +22,9 @@
 .js--f-end {
   justify-self: flex-end;
 }
+.jc--f-end {
+  justify-content: flex-end;
+}
 .border--1 {
   border: 1px solid var(--text);
 }
@@ -46,6 +49,14 @@
 .p--y-m {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.p--x-m {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.p--x-l {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .gap--s {
   gap: 0.6rem;

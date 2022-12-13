@@ -1,0 +1,7 @@
+.title {
+  border-bottom: 4px solid var(--text);
+}
+.container {
+  border-bottom: 2px solid var(--text);
+  margin-bottom: 1rem;
+}
