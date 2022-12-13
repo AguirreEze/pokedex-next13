@@ -9,7 +9,7 @@ interface Iprops {
 export default function NavigationItem({ url, label }: Iprops) {
   return (
     <li className={`${styles.listItem} border--1 d--flex f--center br--xs`}>
-      <Link href={url}>{label}</Link>
+      <Link href={`/pokemon/${url}`}>{label}</Link>
     </li>
   )
 }
