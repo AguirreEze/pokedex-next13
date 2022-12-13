@@ -38,7 +38,7 @@ export default function TypesStats({ types }: Iprops) {
       </p>
       {interactionArray.map((interaction) => {
         return (
-          <p>
+          <p key={interaction[0]}>
             {interaction[0]}{" "}
             <strong className="uppercase">
               {getTypeInteracion(interaction[1] as InteractionType)}
