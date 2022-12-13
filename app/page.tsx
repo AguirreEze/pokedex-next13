@@ -1,5 +1,6 @@
 import NavigationItem from "components/NavigationItem"
 import { PokemonResultType, SearchType } from "types"
+import Navbar from "components/Navbar"
 
 const INITIAL_VALUES = {
   page: "1",
@@ -21,13 +22,16 @@ export default async function Home({ searchParams }: Iprops) {
   const pokemons = await getPokemons({ ...INITIAL_VALUES, page })
 
   return (
-    <main>
-      <h1 className="ta--center p--y-s">Pokedex</h1>
-      <ul className="d--flex fd--col ai--center gap--s">
-        {pokemons.map(({ name }: PokemonResultType) => {
-          return <NavigationItem key={name} url={`/${name}`} label={name} />
-        })}
-      </ul>
-    </main>
+    <>
+      <main>
+        <h1 className="ta--center p--y-s">Pokedex</h1>
+        <ul className="d--flex fd--col ai--center gap--s">
+          {pokemons.map(({ name }: PokemonResultType) => {
+            return <NavigationItem key={name} url={`/${name}`} label={name} />
+          })}
+        </ul>
+      </main>
+      <Navbar />
+    </>
   )
 }
