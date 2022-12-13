@@ -1,0 +1,30 @@
+.display {
+  display: grid;
+  grid-template-rows: 2rem 1fr;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "buttons buttons" "frontImage backImage";
+  justify-items: center;
+}
+
+.imageContainer {
+  position: relative;
+  height: 150px;
+  width: 150px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.areaButtons {
+  grid-area: buttons;
+}
+.imageFront {
+  grid-area: frontImage;
+}
+.imageBack {
+  grid-area: backImage;
+}

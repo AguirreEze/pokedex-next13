@@ -43,6 +43,13 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.p--y-m {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .gap--s {
   gap: 0.6rem;
+}
+.capitalize {
+  text-transform: capitalize;
 }
