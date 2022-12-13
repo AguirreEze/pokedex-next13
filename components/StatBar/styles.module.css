@@ -1,0 +1,13 @@
+.value {
+  width: 2.5rem;
+}
+.bar {
+  width: 255px;
+  height: 1.5rem;
+  overflow: hidden;
+  border: 1px solid var(--text);
+  border-radius: 3rem;
+}
+.barFill {
+  height: 1.5rem;
+}
