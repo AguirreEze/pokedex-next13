@@ -1,5 +1,3 @@
-"use client"
-
 import capitalize from "utils/capitalize"
 
 interface Iprops {
