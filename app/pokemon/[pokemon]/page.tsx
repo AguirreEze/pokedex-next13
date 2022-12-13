@@ -1,5 +1,6 @@
 import GeneralStats from "components/GeneralStats"
 import SpriteDisplay from "components/SpriteDisplay"
+import TypesStats from "components/TypesStats"
 import { PokemonData } from "types"
 
 interface Iprops {
@@ -27,6 +28,7 @@ export default async function Page({ params }: Iprops) {
         height={data.height}
         weight={data.weight}
       />
+      <TypesStats types={data.types} />
     </main>
   )
 }
