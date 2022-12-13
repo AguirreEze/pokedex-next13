@@ -17,7 +17,7 @@ const interactionArray = [
   ["2x from:", "weakTo"],
   ["1/2x from:", "resistantTo"],
   ["1/4x from:", "stronglyResistantTo"],
-  ["Inmune", "inmuneTo"],
+  ["Inmune:", "inmuneTo"],
 ]
 
 export default function TypesStats({ types }: Iprops) {

@@ -22,7 +22,7 @@ export default async function Page({ params }: Iprops) {
 
   return (
     <main className="p--x-m">
-      <h1 className="capitalize ta--center p--y-m">{params.pokemon}</h1>
+      <h1 className="capitalize ta--center p--y-m">{data.name}</h1>
       <SpriteDisplay sources={data.sprites} />
       <GeneralStats
         experience={data.baseExperience}
